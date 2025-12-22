@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="gp7_robot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00556899384123783 0.0947579571734833 6.09611647775227E-07"
+        rpy="0 0 0" />
+      <mass
+        value="5.21544442918112" />
+      <inertia
+        ixx="0.0260256818370489"
+        ixy="-0.000139844186899234"
+        ixz="2.59241629433919E-05"
+        iyy="0.0217205325248604"
+        iyz="-4.76767375395997E-05"
+        izz="0.0252950790006553" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_1">
+    <inertial>
+      <origin
+        xyz="0.000134503059806308 0.0998494433062664 -0.0156718313852401"
+        rpy="0 0 0" />
+      <mass
+        value="2.94469826995042" />
+      <inertia
+        ixx="0.0119470132536149"
+        ixy="-1.22546342961158E-06"
+        ixz="1.70307901366958E-06"
+        iyy="0.00886869039864905"
+        iyz="0.00217925633010803"
+        izz="0.011181352972868" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_0"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1901"
+      rpy="1.5708 0 1.5446" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.9671"
+      upper="2.9671"
+      effort="100"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="Link_2">
+    <inertial>
+      <origin
+        xyz="0.0276252074771908 0.000201917636819981 -0.194988821585821"
+        rpy="0 0 0" />
+      <mass
+        value="6.24054918807357" />
+      <inertia
+        ixx="0.126298756807147"
+        ixy="4.29059114902895E-05"
+        ixz="-0.000192552588249394"
+        iyy="0.110519522576684"
+        iyz="0.000482840080846314"
+        izz="0.0277565663536992" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0.1399 -0.04"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="Link_1" />
+    <child
+      link="Link_2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.1345"
+      upper="2.0944"
+      effort="100"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="Link_3">
+    <inertial>
+      <origin
+        xyz="-0.0159086607027991 -0.000853911402927798 0.020054990140129"
+        rpy="0 0 0" />
+      <mass
+        value="2.84915105674415" />
+      <inertia
+        ixx="0.00823186088760799"
+        ixy="2.89656323772818E-05"
+        ixz="-0.000903674014765267"
+        iyy="0.00779150669560934"
+        iyz="-3.86443268039045E-05"
+        izz="0.00693418516528985" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.445"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="Link_2" />
+    <child
+      link="Link_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.2217"
+      upper="3.3161"
+      effort="100"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="Link_4">
+    <inertial>
+      <origin
+        xyz="0.177174802383241 -0.00015216015435715 -0.000157756334050222"
+        rpy="0 0 0" />
+      <mass
+        value="2.75543486027643" />
+      <inertia
+        ixx="0.00308572082590302"
+        ixy="3.99895075414287E-06"
+        ixz="-0.000318616375094939"
+        iyy="0.0100848197701691"
+        iyz="-2.48795451805911E-06"
+        izz="0.0107851177216757" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_3"
+    type="revolute">
+    <origin
+      xyz="0.068592 0 0.04"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link_3" />
+    <child
+      link="Link_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.3161"
+      upper="3.3161"
+      effort="100"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="Link_5">
+    <inertial>
+      <origin
+        xyz="0.000253905873221272 0.0132104932030859 -0.00174847528345036"
+        rpy="0 0 0" />
+      <mass
+        value="0.24588630034741" />
+      <inertia
+        ixx="0.000139534602258257"
+        ixy="-2.11771789628785E-06"
+        ixz="1.96184580581413E-07"
+        iyy="0.000156835351922146"
+        iyz="-1.29214917414175E-06"
+        izz="0.0001856168810843" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_4"
+    type="revolute">
+    <origin
+      xyz="0.37141 0 0"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="Link_4" />
+    <child
+      link="Link_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.3562"
+      upper="2.3562"
+      effort="100"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="Link_6">
+    <inertial>
+      <origin
+        xyz="0.00818428855341535 -8.73745520379998E-14 -6.68341476350361E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0241915724295803" />
+      <inertia
+        ixx="8.98081073180324E-06"
+        ixy="-4.45920629459563E-17"
+        ixz="2.0766263239999E-09"
+        iyy="4.81100868909689E-06"
+        iyz="-1.17305717161914E-19"
+        izz="4.83536850887334E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gp7_robot_description/meshes/Link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_5"
+    type="revolute">
+    <origin
+      xyz="0 0.06593 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="Link_5" />
+    <child
+      link="Link_6" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-6.2814"
+      upper="6.2814"
+      effort="100"
+      velocity="1.0" />
+  </joint>
+</robot>

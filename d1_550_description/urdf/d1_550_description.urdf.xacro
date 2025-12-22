@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="d1_550_description">
+  <xacro:include filename="$(find d1_550_description)/urdf/d1_550_description.urdf" />
+</robot>

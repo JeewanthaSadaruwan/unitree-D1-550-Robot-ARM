@@ -1,0 +1,59 @@
+# Build directories
+build/
+install/
+log/
+bin/
+lib/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Colcon
+COLCON_IGNORE
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+*.egg
+
+# ROS
+devel/
+.catkin_workspace
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Executables
+*.exe
+*.out
+*.app
+joint_angle_control
+multiple_joint_angle_control
+joint_enable_control
+arm_zero_control
+get_arm_joint_angle
+pick_and_place
+
+# Testing
+Testing/
+CTestConfiguration.ini
+CTestCustom.cmake

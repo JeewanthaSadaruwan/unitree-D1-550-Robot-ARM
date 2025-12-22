@@ -1,0 +1,370 @@
+<sdf version='1.11'>
+  <model name='gp7_robot'>
+    <link name='base_link'>
+      <inertial>
+        <pose>0.0055689938412378298 0.094757957173483301 6.0961164777522696e-07 0 0 0</pose>
+        <mass>5.2154444291811197</mass>
+        <inertia>
+          <ixx>0.026025681837048901</ixx>
+          <ixy>-0.00013984418689923399</ixy>
+          <ixz>2.5924162943391901e-05</ixz>
+          <iyy>0.021720532524860399</iyy>
+          <iyz>-4.7676737539599701e-05</iyz>
+          <izz>0.0252950790006553</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.941176474 0.941176474 0.941176474 1</diffuse>
+          <ambient>0.941176474 0.941176474 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='Joint_0' type='revolute'>
+      <pose relative_to='base_link'>0 0 0.19009999999999999 1.5708 0 1.5446</pose>
+      <parent>base_link</parent>
+      <child>Link_1</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-2.9670999999999998</lower>
+          <upper>2.9670999999999998</upper>
+          <effort>100</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='Link_1'>
+      <pose relative_to='Joint_0'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.000134503059806308 0.099849443306266397 -0.015671831385240101 0 0 0</pose>
+        <mass>2.9446982699504201</mass>
+        <inertia>
+          <ixx>0.011947013253614899</ixx>
+          <ixy>-1.22546342961158e-06</ixy>
+          <ixz>1.70307901366958e-06</ixz>
+          <iyy>0.0088686903986490498</iyy>
+          <iyz>0.00217925633010803</iyz>
+          <izz>0.011181352972868</izz>
+        </inertia>
+      </inertial>
+      <collision name='Link_1_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Link_1_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_1.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.941176474 0.941176474 0.941176474 1</diffuse>
+          <ambient>0.941176474 0.941176474 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='Joint_1' type='revolute'>
+      <pose relative_to='Link_1'>0 0.1399 -0.040000000000000001 -1.5707926536057684 -1.5707926536057681 -3.1415926535746808</pose>
+      <parent>Link_1</parent>
+      <child>Link_2</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.1345000000000001</lower>
+          <upper>2.0943999999999998</upper>
+          <effort>100</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='Link_2'>
+      <pose relative_to='Joint_1'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.0276252074771908 0.000201917636819981 -0.19498882158582101 0 0 0</pose>
+        <mass>6.2405491880735697</mass>
+        <inertia>
+          <ixx>0.126298756807147</ixx>
+          <ixy>4.2905911490289499e-05</ixy>
+          <ixz>-0.00019255258824939399</ixz>
+          <iyy>0.110519522576684</iyy>
+          <iyz>0.00048284008084631402</iyz>
+          <izz>0.027756566353699198</izz>
+        </inertia>
+      </inertial>
+      <collision name='Link_2_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Link_2_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_2.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.941176474 0.941176474 0.941176474 1</diffuse>
+          <ambient>0.941176474 0.941176474 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='Joint_2' type='revolute'>
+      <pose relative_to='Link_2'>0 0 -0.44500000000000001 -3.1415853071795872 0 -3.1415853071795872</pose>
+      <parent>Link_2</parent>
+      <child>Link_3</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.2217</lower>
+          <upper>3.3161</upper>
+          <effort>100</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='Link_3'>
+      <pose relative_to='Joint_2'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.015908660702799102 -0.00085391140292779796 0.020054990140129 0 0 0</pose>
+        <mass>2.8491510567441498</mass>
+        <inertia>
+          <ixx>0.0082318608876079894</ixx>
+          <ixy>2.89656323772818e-05</ixy>
+          <ixz>-0.00090367401476526695</ixz>
+          <iyy>0.0077915066956093402</iyy>
+          <iyz>-3.8644326803904499e-05</iyz>
+          <izz>0.0069341851652898502</izz>
+        </inertia>
+      </inertial>
+      <collision name='Link_3_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_3.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Link_3_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_3.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.941176474 0.941176474 0.941176474 1</diffuse>
+          <ambient>0.941176474 0.941176474 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='Joint_3' type='revolute'>
+      <pose relative_to='Link_3'>0.068592 0 0.040000000000000001 1.5708 0 0</pose>
+      <parent>Link_3</parent>
+      <child>Link_4</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-3.3161</lower>
+          <upper>3.3161</upper>
+          <effort>100</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='Link_4'>
+      <pose relative_to='Joint_3'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.17717480238324099 -0.00015216015435715001 -0.000157756334050222 0 0 0</pose>
+        <mass>2.7554348602764298</mass>
+        <inertia>
+          <ixx>0.0030857208259030201</ixx>
+          <ixy>3.9989507541428699e-06</ixy>
+          <ixz>-0.00031861637509493902</ixz>
+          <iyy>0.0100848197701691</iyy>
+          <iyz>-2.4879545180591099e-06</iyz>
+          <izz>0.0107851177216757</izz>
+        </inertia>
+      </inertial>
+      <collision name='Link_4_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_4.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Link_4_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_4.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.941176474 0.941176474 0.941176474 1</diffuse>
+          <ambient>0.941176474 0.941176474 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='Joint_4' type='revolute'>
+      <pose relative_to='Link_4'>0.37141000000000002 0 0 -3.1415853071795872 -4.2351647362715017e-22 1.5708</pose>
+      <parent>Link_4</parent>
+      <child>Link_5</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-2.3561999999999999</lower>
+          <upper>2.3561999999999999</upper>
+          <effort>100</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='Link_5'>
+      <pose relative_to='Joint_4'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.000253905873221272 0.013210493203085901 -0.00174847528345036 0 0 0</pose>
+        <mass>0.24588630034740999</mass>
+        <inertia>
+          <ixx>0.00013953460225825699</ixx>
+          <ixy>-2.1177178962878499e-06</ixy>
+          <ixz>1.9618458058141299e-07</ixz>
+          <iyy>0.00015683535192214599</iyy>
+          <iyz>-1.2921491741417501e-06</iyz>
+          <izz>0.00018561688108429999</izz>
+        </inertia>
+      </inertial>
+      <collision name='Link_5_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_5.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Link_5_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_5.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.941176474 0.941176474 0.941176474 1</diffuse>
+          <ambient>0.941176474 0.941176474 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='Joint_5' type='revolute'>
+      <pose relative_to='Link_5'>0 0.065930000000000002 0 0 0 1.5708</pose>
+      <parent>Link_5</parent>
+      <child>Link_6</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-6.2813999999999997</lower>
+          <upper>6.2813999999999997</upper>
+          <effort>100</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='Link_6'>
+      <pose relative_to='Joint_5'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.0081842885534153496 -8.7374552037999794e-14 -6.6834147635036104e-05 0 0 0</pose>
+        <mass>0.0241915724295803</mass>
+        <inertia>
+          <ixx>8.9808107318032402e-06</ixx>
+          <ixy>-4.4592062945956301e-17</ixy>
+          <ixz>2.0766263239998999e-09</ixz>
+          <iyy>4.8110086890968902e-06</iyy>
+          <iyz>-1.1730571716191401e-19</iyz>
+          <izz>4.8353685088733401e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='Link_6_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_6.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Link_6_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gp7_robot_description/meshes/Link_6.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.941176474 0.941176474 0.941176474 1</diffuse>
+          <ambient>0.941176474 0.941176474 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
