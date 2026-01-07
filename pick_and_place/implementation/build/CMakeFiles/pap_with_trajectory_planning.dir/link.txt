@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/pap_with_trajectory_planning.dir/pap_with_trajectory_planning.cpp.o CMakeFiles/pap_with_trajectory_planning.dir/msg/ArmString_.cpp.o -o pap_with_trajectory_planning  -lunitree_sdk2 -lddsc -lddscxx -lrt -lpthread 

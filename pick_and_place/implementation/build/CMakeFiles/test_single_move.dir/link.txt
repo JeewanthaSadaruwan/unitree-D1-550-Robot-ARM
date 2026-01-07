@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_single_move.dir/test_single_move.cpp.o CMakeFiles/test_single_move.dir/msg/ArmString_.cpp.o CMakeFiles/test_single_move.dir/msg/PubServoInfo_.cpp.o -o test_single_move  -lunitree_sdk2 -lddsc -lddscxx -lrt -lpthread 

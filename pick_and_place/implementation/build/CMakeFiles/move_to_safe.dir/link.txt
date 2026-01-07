@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/move_to_safe.dir/move_to_safe.cpp.o CMakeFiles/move_to_safe.dir/msg/ArmString_.cpp.o -o move_to_safe  -lunitree_sdk2 -lddsc -lddscxx -lrt -lpthread 

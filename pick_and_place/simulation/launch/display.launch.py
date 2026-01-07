@@ -43,17 +43,17 @@ def generate_launch_description():
         arguments=['-d', os.path.join(pkg_share, 'urdf.rviz')] if os.path.exists(os.path.join(pkg_share, 'urdf.rviz')) else []
     )
     
-    # Environment visualization publisher - DISABLED (not needed for pick and place)
-    # env_publisher = Node(
-    #     package='d1_550_description',
-    #     executable='environment_publisher.py',
-    #     name='environment_publisher',
-    #     output='screen'
-    # )
+    # Environment visualization publisher - Shows pick/place boxes
+    env_publisher = Node(
+        package='d1_550_description',
+        executable='environment_publisher.py',
+        name='environment_publisher',
+        output='screen'
+    )
     
     return LaunchDescription([
         robot_state_publisher_node,
         joint_state_publisher_gui_node,
         rviz_node,
-        # env_publisher  # Disabled - only robot arm needed
+        env_publisher  # Enabled - shows boxes for pick and place
     ])

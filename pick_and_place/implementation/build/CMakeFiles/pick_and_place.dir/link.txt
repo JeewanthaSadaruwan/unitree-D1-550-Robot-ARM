@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/pick_and_place.dir/pick_and_place.cpp.o CMakeFiles/pick_and_place.dir/msg/ArmString_.cpp.o -o pick_and_place  -lunitree_sdk2 -lddsc -lddscxx -lrt -lpthread 
